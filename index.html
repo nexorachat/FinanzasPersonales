@@ -4,19 +4,27 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AhorraClaro | Finanzas personales claras para España</title>
-<meta name="description" content="Guías prácticas de ahorro, inversión, cuentas, hipotecas y seguros.">
-<!-- AQUÍ pega el código de AdSense cuando te lo den -->
+<meta name="description" content="Guías prácticas de ahorro, inversión, cuentas, hipotecas y seguros explicadas sin complicaciones.">
 <style>
-body{font-family:Georgia,serif;margin:0;color:#1a1a1a;line-height:1.7;background:#fafafa}
+*{box-sizing:border-box}
+body{font-family:Georgia,serif;margin:0;color:#1a1a1a;line-height:1.75;background:#f6f8f7}
 header,footer{background:#0b3d2e;color:#fff;padding:16px 5%}
-header a,footer a{color:#cfe;margin-right:16px;text-decoration:none}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+header a,footer a{color:#d7f5e6;text-decoration:none;margin-right:14px}
 .logo{font-size:1.6rem;font-weight:bold;color:#fff!important}
-main{max-width:760px;margin:30px auto;padding:0 20px}
-.card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:16px;margin:14px 0}
+main{max-width:780px;margin:30px auto;padding:0 20px}
+.hero{background:#e3f3ea;border-radius:12px;padding:28px;margin-bottom:20px}
+.card{background:#fff;border:1px solid #dde5e0;border-radius:10px;padding:16px 20px;margin:14px 0}
+.card h2{margin:0 0 6px}
 a{color:#0b6e4f}
 h1,h2{line-height:1.25}
+.aviso{font-size:.9rem;color:#555;border-top:1px solid #ddd;margin-top:30px;padding-top:12px}
 section{display:none}
 section.activa{display:block}
+#cookies{position:fixed;bottom:0;left:0;right:0;background:#102a22;color:#fff;padding:16px 5%;z-index:99;display:none}
+#cookies button{margin:8px 8px 0 0;padding:8px 16px;border:0;border-radius:6px;cursor:pointer}
+#cookies a{color:#9fe}
+@media(max-width:600px){h1{font-size:1.6rem}}
 </style>
 </head>
 <body>
@@ -31,37 +39,43 @@ section.activa{display:block}
 <main>
 
 <section id="inicio" class="activa">
-  <h1>Finanzas personales explicadas sin complicaciones</h1>
-  <p>Guías prácticas sobre ahorro, inversión, cuentas, hipotecas y seguros.</p>
-  <div class="card"><h2><a href="#ahorrar-300">Cómo ahorrar 300 € al mes en España</a></h2></div>
-  <div class="card"><h2><a href="#cuentas-remuneradas">Cómo elegir una cuenta remunerada</a></h2></div>
-  <div class="card"><h2><a href="#fondos-indexados">Fondos indexados para principiantes</a></h2></div>
+  <div class="hero">
+    <h1>Finanzas personales explicadas sin complicaciones</h1>
+    <p>Guías prácticas y honestas sobre ahorro, inversión, cuentas, hipotecas y seguros.</p>
+  </div>
+  <div class="card"><h2><a href="#ahorrar-300">Cómo ahorrar 300 € al mes en España</a></h2><p>Un método paso a paso para ordenar tus gastos y ahorrar cada mes.</p></div>
+  <div class="card"><h2><a href="#cuentas-remuneradas">Cuentas remuneradas: cómo elegir la mejor</a></h2><p>Qué mirar antes de abrir una y cómo funciona la garantía de depósitos.</p></div>
+  <div class="card"><h2><a href="#fondos-indexados">Fondos indexados para principiantes</a></h2><p>Qué son, ventajas, riesgos y cómo dar los primeros pasos.</p></div>
 </section>
 
 <section id="ahorrar-300">
   <h1>Cómo ahorrar 300 € al mes en España: método paso a paso</h1>
   <p>Ahorrar no consiste en privarse de todo, sino en ordenar tus gastos. Estos son los pasos que mejor funcionan.</p>
   <h2>1. Calcula tus ingresos y gastos reales</h2>
-  <p>Apunta durante un mes todo lo que gastas. Casi todo el mundo descubre suscripciones olvidadas y gastos hormiga (cafés, comida a domicilio).</p>
+  <p>Apunta durante un mes todo lo que gastas. Casi todo el mundo descubre suscripciones olvidadas y gastos hormiga, como cafés o comida a domicilio.</p>
   <h2>2. Aplica la regla 50/30/20</h2>
-  <p>50 % para necesidades, 30 % para caprichos y 20 % para ahorro o inversión. Ajusta los porcentajes a tu situación.</p>
+  <p>Destina el 50 % a necesidades, el 30 % a caprichos y el 20 % a ahorro o inversión. Ajusta los porcentajes a tu situación.</p>
   <h2>3. Automatiza el ahorro</h2>
   <p>Programa una transferencia el día que cobras hacia una cuenta aparte. Lo que no ves, no lo gastas.</p>
   <h2>4. Revisa seguros, luz y teléfono</h2>
   <p>Comparar tarifas una vez al año puede ahorrarte entre 200 y 500 € anuales.</p>
   <h2>5. Crea un fondo de emergencia</h2>
-  <p>El objetivo habitual es cubrir de 3 a 6 meses de gastos básicos.</p>
+  <p>El objetivo habitual es cubrir entre 3 y 6 meses de gastos básicos.</p>
+  <p class="aviso">Contenido informativo. No constituye asesoramiento financiero personalizado.</p>
+  <p><a href="#cuentas-remuneradas">Siguiente: cuentas remuneradas →</a></p>
 </section>
 
 <section id="cuentas-remuneradas">
   <h1>Qué es una cuenta remunerada y cómo elegir la mejor en España</h1>
-  <p>Una cuenta remunerada paga intereses por el dinero que mantienes en ella. Es una opción sencilla para el fondo de emergencia.</p>
+  <p>Una cuenta remunerada paga intereses por el dinero que mantienes en ella. Es una opción sencilla para guardar el fondo de emergencia.</p>
   <h2>Qué mirar antes de abrirla</h2>
-  <p>Revisa el TAE, si la rentabilidad es temporal, si exige domiciliar la nómina o contratar productos, y el límite de saldo remunerado.</p>
-  <h2>Garantía</h2>
+  <p>Revisa el TAE, si la rentabilidad es temporal, si exige domiciliar la nómina o contratar otros productos, y el límite de saldo remunerado.</p>
+  <h2>Garantía de depósitos</h2>
   <p>Los depósitos en bancos españoles están cubiertos por el Fondo de Garantía de Depósitos hasta 100.000 € por titular y entidad.</p>
-  <h2>Consejo</h2>
+  <h2>Consejo final</h2>
   <p>Compara siempre las condiciones actuales en la web oficial del banco, porque los tipos cambian con frecuencia.</p>
+  <p class="aviso">Contenido informativo. No constituye asesoramiento financiero personalizado.</p>
+  <p><a href="#fondos-indexados">Siguiente: fondos indexados →</a></p>
 </section>
 
 <section id="fondos-indexados">
@@ -73,12 +87,13 @@ section.activa{display:block}
   <p>El valor puede bajar y no hay rentabilidad garantizada. Invierte solo dinero que no necesites a corto plazo.</p>
   <h2>Primeros pasos</h2>
   <p>Define tu horizonte temporal, elige un bróker regulado, compara comisiones y aporta de forma periódica.</p>
-  <p><em>Contenido informativo: no es asesoramiento financiero personalizado.</em></p>
+  <p class="aviso">Contenido informativo. No constituye asesoramiento financiero personalizado.</p>
+  <p><a href="#inicio">← Volver al inicio</a></p>
 </section>
 
 <section id="sobre-nosotros">
   <h1>Sobre nosotros</h1>
-  <p>En AhorraClaro publicamos guías de finanzas personales en lenguaje sencillo. Nuestro objetivo es ayudarte a entender tu dinero y tomar mejores decisiones. [Cuenta aquí quién eres y por qué creaste la web.]</p>
+  <p>En AhorraClaro publicamos guías de finanzas personales en lenguaje sencillo para ayudarte a entender tu dinero y tomar mejores decisiones. [Cuenta quién eres y por qué creaste la web.]</p>
 </section>
 
 <section id="contacto">
@@ -93,7 +108,7 @@ section.activa{display:block}
 
 <section id="politica-cookies">
   <h1>Política de cookies</h1>
-  <p>Usamos cookies técnicas, de análisis y publicitarias (Google). Puedes aceptarlas, rechazarlas o configurarlas desde el banner de cookies, y eliminarlas desde tu navegador.</p>
+  <p>Usamos cookies técnicas, de análisis y publicitarias (Google). Puedes aceptarlas o rechazarlas desde el banner de cookies y eliminarlas desde tu navegador.</p>
 </section>
 
 <section id="aviso-legal">
@@ -110,7 +125,17 @@ section.activa{display:block}
   <a href="#aviso-legal">Aviso legal</a>
 </footer>
 
+<div id="cookies">
+  Usamos cookies propias y de terceros (Google) para analizar el tráfico y mostrar anuncios.
+  <a href="#politica-cookies">Más información</a><br>
+  <button id="ok" style="background:#2ecc8f">Aceptar</button>
+  <button id="no">Rechazar</button>
+</div>
+
 <script>
+// Cuando AdSense te dé tu ID, cámbialo aquí:
+var ADSENSE_ID = "ca-pub-XXXXXXXXXXXXXXXX";
+
 function mostrar(){
   var id = location.hash.replace('#','') || 'inicio';
   var destino = document.getElementById(id) || document.getElementById('inicio');
@@ -120,6 +145,28 @@ function mostrar(){
 }
 window.addEventListener('hashchange', mostrar);
 mostrar();
+
+function cargarAdsense(){
+  if(ADSENSE_ID.indexOf("XXXX") > -1) return;
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=" + ADSENSE_ID;
+  s.crossOrigin = "anonymous";
+  document.head.appendChild(s);
+}
+var eleccion = null;
+try { eleccion = localStorage.getItem("cookies"); } catch(e) {}
+if(!eleccion){ document.getElementById("cookies").style.display = "block"; }
+if(eleccion === "si"){ cargarAdsense(); }
+document.getElementById("ok").onclick = function(){
+  try { localStorage.setItem("cookies","si"); } catch(e) {}
+  document.getElementById("cookies").style.display = "none";
+  cargarAdsense();
+};
+document.getElementById("no").onclick = function(){
+  try { localStorage.setItem("cookies","no"); } catch(e) {}
+  document.getElementById("cookies").style.display = "none";
+};
 </script>
 
 </body>
